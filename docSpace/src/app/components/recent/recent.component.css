@@ -1,0 +1,7 @@
+.col-sm-6{
+    background-color: rgb(184, 184, 184);
+    height: 45vh;
+    /* margin-left: 5px; */
+    float: left;
+    margin: 10px;
+}

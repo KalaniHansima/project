@@ -1,0 +1,27 @@
+    .mastfoot { /*index.html */
+    /* color: #999; /* IE8 proofing  */
+    color: rgba(255,255,255,.5);
+  }
+.container-fluid{
+    height: 50px;
+}
+html, body {
+  /* height:100%; */
+  /* width:100%; */
+  margin:0;
+  background-color: white;
+  padding:0;
+}
+#toggle-btn{
+  background-color: #3A264A;
+  border-color:  transparent;
+}
+.container {
+ margin-top: 5px;
+ overflow-x:auto;
+}
+
+.btn-block{
+    width: 15vw;
+    margin-left: 25%;
+}

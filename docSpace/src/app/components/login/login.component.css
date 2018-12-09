@@ -1,0 +1,35 @@
+input:focus { 
+    box-shadow: 0 0 5px #A86DD6;
+    padding: 3px 0px 3px 3px;
+    border: 1px solid #A86DD6;
+}
+
+.container-form {
+ width: 400px;
+ float: right;
+ /* margin-top: 15%; */
+ /* margin-right: 5%;     */
+ overflow-x:auto;
+ height: 30vh;
+}
+
+.form-control{
+    margin: 10px;
+}
+
+.btn-block{
+    width: 15vw;
+    margin-left: 25%;
+}
+.vl {
+    border-left: 2px solid white;
+    height: auto;
+}
+.carousel-caption{
+    width: 50%;
+    color: black;
+}
+img{
+    width: 650px;
+    height: 500px;
+}

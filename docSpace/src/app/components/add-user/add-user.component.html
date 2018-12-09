@@ -1,0 +1,130 @@
+<app-leftbar>Loading...</app-leftbar>
+<div class="container"> 
+    <form class="form-horizontal" id="regForm" action="" (submit)="onSubmit()" method="">
+<!-- TAB 1 -->
+      <div class="tab" style="height:470px;" id="firsttab" >
+        <div class="card" style="margin-top: 15px; border: none; width: 90%;">
+          <div class="card-header" style=" height: 45px; border-radius: 15px;">
+            <h3 style="color:#0AA6A6; text-align: center;"><b> Personal Information </b></h3>
+          </div>
+          <div class="card-body">
+            <div class="row" style="margin-top: 5px;">
+              <label class="col-sm-2 col-form-label" for="fullname">Full name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="fullName" placeholder="" value="" required autofocus [(ngModel)]="fullname" name="fullname">
+              </div>
+            </div>
+            <div style="float:left; width: 30%; margin-top:30px;">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="avatar img-circle img-thumbnail " width="150" height="150" alt="avatar">
+              <input type="file" accept="image/jpeg, image/png" class="text-center center-block file-upload" style="border:none">
+            </div>
+            <div class="row" style=" margin-top: 10px;">
+              <label class="col-sm-3 col-form-label" for="dob">Date of Birth:</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="dob" placeholder="" value="" required [(ngModel)]="dob" name="dob">
+              </div>
+            </div>
+            <div class="row" style="margin-top: 5px;">
+              <label class="col-sm-3 col-form-label" for="nicNo">NIC No:</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="nic" placeholder="" value="" required [(ngModel)]="nic" name="nic">
+              </div>
+            </div>
+            <div class="row" style=" margin-top: 10px">
+              <label class="col-sm-3 col-form-label"for="gender">Gender:</label>
+              <div class="col-sm-7" style="margin-top: 15px;">
+                <div class="input-group">
+                  <input type="radio" name="optradio" style="width:10%;">
+                  <label for="male">Male</label>
+                  <input type="radio" name="optradio" style="width:10%; margin-left: 50px;">
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div> 
+            <div class="row">
+              <label class="col-sm-3 col-form-label" for="nicNo">Phone No:</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="phoneNo" placeholder="" value="" required [(ngModel)]="phoneNo" name="phoneNo">
+              </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row" >
+              <label class="col-sm-2 col-form-label" for="address">Address :</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="address" placeholder="" value="" [(ngModel)]="address" name="address" required>
+              </div>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="address1" placeholder="Street Address" value="" [(ngModel)]="address1" name="address1" required>
+              </div>
+            </div>
+            <div class="row" style=" margin-top: 10px">
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="city" placeholder="City" [(ngModel)]="city" name="city" required>
+              </div>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="province" placeholder="Province" [(ngModel)]="province" name="province" required>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="postalcode" placeholder="Postal Code" [(ngModel)]="postalcode" name="postalcode" required>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
+
+<!-- TAB 3 -->
+      <div class="tab" style="height:300px;">
+        <div class="card" style="margin-top: 15px; border: none; width: 90%;">
+          <div class="card-header" style=" height: 45px; border-radius: 15px;">
+            <h3 style="color:#0AA6A6; text-align: center;"><b>Office Use </b></h3>
+          </div>
+          <div class="card-body">          
+            <div class="row" style="margin-top: 10px;">
+              <label class="col-sm-3 col-form-label" for="empId">Employee ID: </label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="emp_id" [(ngModel)]="emp_id" name="emp_id" placeholder="" required autofocus >
+              </div>
+            </div>
+            <div class="row" style=" margin-top: 10px">
+                <label class="col-sm-3 col-form-label" for="role">Role: </label>
+                <div class="col-sm-5">
+                    <select class="form-control" name="">
+                        <option value="manager">Manager</option>
+                        <option value="supervisor">Supervisor</option>
+                        <option value="director">Director</option>
+                        <option value="clark">Clark</option>
+                      </select>
+                  <!-- <input type="text" class="form-control" id="empId" placeholder="" required > -->
+                </div>
+            </div>
+            <div class="row" style=" margin-top: 10px">
+              <label class="col-sm-3 col-form-label" for="email">Email: </label>
+              <div class="col-sm-5">
+                <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" placeholder="username@example.com" required checked>
+              </div>
+            </div>
+            <!-- <div class="row" style=" margin-top: 10px">
+              <label class="col-sm-3 col-form-label" for="pwd">Password: </label>
+              <div class="col-sm-5">
+                  <input type="password" class="form-control" id="pwd" placeholder="Password">
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+        
+          <div style="overflow:auto;">
+          <div style="float:right; margin-right: 10%">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)" style="margin-right: 10px;display: none;">Previous</button>
+            <button type="submit" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+</div>

@@ -1,0 +1,29 @@
+.navi{
+    height:min-content;
+    /* display: flex; */
+    padding: 0;
+    margin: 0;
+    background-color: #230526;
+}
+.brand{
+        /* margin-top: 8px; */
+        margin-left: 8px;
+        /* margin-bottom: 0px; */
+        /* padding: 0px 10px 0px 10px; */
+        /* width: 150px; */
+        height: 50px;
+        text-align: center;
+        /* background-color: #eee; */
+        /* border-radius: 100px; */
+        font-size: 40px;
+        /* line-height: 60px; */
+        color: white;
+}
+.navbar-nav li a{
+    color:white;
+    padding-left: 25px;
+    /* overflow: hidden; */
+}
+.navbar-nav{
+    margin-left: 30px;
+}
